@@ -1,0 +1,31 @@
+.card img{
+    width:90% ;
+    height: 70%;
+}
+.card {
+    cursor: pointer;
+    border: 1px solid rgba(255, 96, 96, 1);
+    width: 100%;
+    max-width: 340px;
+    max-height: 340px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: rgba(255, 96, 96, 1);
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+    
+    &-content {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
+}

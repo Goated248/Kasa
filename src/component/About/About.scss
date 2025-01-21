@@ -1,0 +1,27 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-image{
+        background-image: url('../../assets/Image-source.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 233px;
+        width: 100%;
+        max-width: 1240px;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    &-dropdowns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 1024px;
+    }
+}

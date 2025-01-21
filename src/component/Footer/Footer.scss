@@ -1,0 +1,19 @@
+:root {
+    font-family: Montserrat, sans-serif;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 209px;
+    width:100%;
+    max-width: 1440px;
+
+    &-text {
+        color: white;
+        padding-top: 25px;
+    }
+}

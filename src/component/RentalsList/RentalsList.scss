@@ -1,0 +1,50 @@
+.rentals{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-image{
+        background-image: url('../../assets/background-index.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 233px;
+        width: 100%;
+        max-width: 1240px;
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;
+        position: relative;
+        margin-bottom: 40px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            border-radius: 35px;
+          }
+      
+
+        .rentals-title {
+            z-index: 2;
+            color: white;
+        }
+    }
+
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:25px;
+        background-color: rgba(246, 246, 246, 1);
+        border-radius: 35px;
+        width:100%;
+        max-width: 1240px;
+    }
+}

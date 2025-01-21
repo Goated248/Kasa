@@ -1,0 +1,23 @@
+.dropdown {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.dropdown-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(255, 96, 96);
+  border-radius: 10px;
+}
+.dropdown-content {
+  color: black;
+  background-color: rgb(246, 246, 246);
+}
+.dropdown-content p {
+  margin: 0px;
+  padding: 10px;
+}/*# sourceMappingURL=DropdownMenu.css.map */
