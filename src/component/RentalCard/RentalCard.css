@@ -1,16 +1,30 @@
 .card img {
   width: 90%;
-  height: 70%;
+  height: 250px;
+  object-fit: cover;
+}
+
+a.card {
+  text-decoration: none;
+  color: inherit;
+  max-width: 340px;
+  max-height: 340px;
+  transition: transform 0.3s ease-in-out;
+}
+a.card:hover {
+  transform: scale(1.05);
 }
 
 .card {
   cursor: pointer;
   border: 1px solid rgb(255, 96, 96);
   width: 100%;
-  max-width: 340px;
-  max-height: 340px;
   padding: 10px;
   border-radius: 5px;
+  max-width: 340px;
+  max-height: 340px;
+  width: 100%;
+  height: 100%;
   background-color: rgb(255, 96, 96);
   margin: 10px;
   display: flex;
@@ -19,13 +33,13 @@
   align-items: center;
   font-family: Montserrat, sans-serif;
   color: white;
-  transition: transform 0.3s ease-in-out;
-}
-.card:hover {
-  transform: scale(1.05);
 }
 .card-content {
   width: 100%;
+  height: 52px;
   display: flex;
   align-items: flex-start;
+}
+.card-title {
+  margin-bottom: 0;
 }/*# sourceMappingURL=RentalCard.css.map */

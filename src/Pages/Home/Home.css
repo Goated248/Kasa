@@ -19,6 +19,11 @@
   position: relative;
   margin-bottom: 40px;
 }
+@media (max-width: 480px) {
+  .rentals-image {
+    height: 111px;
+  }
+}
 .rentals-image::before {
   content: "";
   position: absolute;
@@ -34,6 +39,11 @@
   z-index: 2;
   color: white;
 }
+@media (max-width: 480px) {
+  .rentals-image .rentals-title {
+    font-size: 24px;
+  }
+}
 .rentals-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -42,4 +52,10 @@
   border-radius: 35px;
   width: 100%;
   max-width: 1240px;
-}/*# sourceMappingURL=RentalsList.css.map */
+}
+@media (max-width: 480px) {
+  .rentals-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}/*# sourceMappingURL=Home.css.map */

@@ -2,6 +2,7 @@
   color: white;
   margin-top: 15px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 .dropdown-header {
   display: flex;
@@ -13,11 +14,11 @@
   background-color: rgb(255, 96, 96);
   border-radius: 10px;
 }
+.dropdown-header h3 {
+  margin: 10px;
+}
 .dropdown-content {
   color: black;
   background-color: rgb(246, 246, 246);
-}
-.dropdown-content p {
-  margin: 0px;
-  padding: 10px;
+  padding: 10px 0 10px 10px;
 }/*# sourceMappingURL=DropdownMenu.css.map */

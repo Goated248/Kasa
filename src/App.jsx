@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import RentalsList from './component/RentalsList/RentalsList'
+import Home from './Pages/Home/Home'
 import Header from './component/Header/Header'
 import Footer from './component/Footer/Footer'
-import About from './component/About/About'
-import PageNotFound from './component/PageNotFound/PageNotFound'
-import RentalPage from './component/RentalPage/RentalPage'
+import PageNotFound from './Pages/404/404'
+import Logement from './Pages/Logement/Logement'
+import Info from './Pages/Info/Info'
 
 function App() {
 
@@ -13,9 +13,10 @@ function App() {
   <Router>
     <Header />
     <Routes>
-        <Route path="/" element={<RentalsList />} /> 
-        <Route path="/rental/:id" element={<RentalPage />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/" element={<Home />} /> 
+        <Route path="/rental/:id" element={<Logement />} />
+        <Route path="/about" element={<Info />} />
+        <Route path="/404" element={<PageNotFound />}/>
         <Route path="*" element={<PageNotFound />}/>
     </Routes>
     <Footer />

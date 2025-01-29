@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react";
-import RentalCard from "../RentalCard/RentalCard";
+import RentalCard from "../../component/RentalCard/RentalCard";
 import { fetchLogements } from "../../api/api";
-import './RentalsList.css'
+import './Home.css'
 
 
-const RentalsList = () => {
+const Home = () => {
     const[rentals, setRentals]= useState([])
     const[loading, setLoading]= useState(true)
     const[error, setError]= useState(null)
@@ -41,4 +41,4 @@ return (
 )
 
 } 
-export default RentalsList
+export default Home

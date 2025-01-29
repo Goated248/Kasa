@@ -18,6 +18,9 @@
         border-radius: 35px;
         position: relative;
         margin-bottom: 40px;
+        @media(max-width:480px){
+            height: 111px;
+        }
 
         &::before {
             content: '';
@@ -35,6 +38,9 @@
         .rentals-title {
             z-index: 2;
             color: white;
+            @media(max-width:480px) {
+                font-size: 24px;
+            }
         }
     }
 
@@ -46,5 +52,10 @@
         border-radius: 35px;
         width:100%;
         max-width: 1240px;
+
+        @media(max-width: 480px){
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
     }
 }

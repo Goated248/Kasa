@@ -1,0 +1,129 @@
+.rental {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rental-content {
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+}
+.rental-content_overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+@media (max-width: 480px) {
+  .rental-content_overview {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.rental-content_infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.rental-content_infos_title {
+  font-size: 36px;
+  color: rgb(255, 96, 96);
+  margin: 0;
+}
+@media (max-width: 480px) {
+  .rental-content_infos_title {
+    font-size: 18px;
+  }
+}
+.rental-content_infos_location {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .rental-content_infos_location {
+    font-size: 14px;
+  }
+}
+.rental-content_infos_tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.rental-content_infos_tags_tag {
+  background-color: rgb(255, 96, 96);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.rental-content_host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media (max-width: 480px) {
+  .rental-content_host {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.rental-content_host_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rental-content_host_info_name {
+  font-weight: bold;
+  color: rgb(255, 96, 96);
+  margin-right: 15px;
+  text-align: end;
+}
+@media (max-width: 480px) {
+  .rental-content_host_info_name {
+    width: 50px;
+    font-size: 12px;
+  }
+}
+.rental-content_host_info_picture {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.rental-content_host_rating {
+  display: flex;
+}
+.rental-content_host_rating .filled {
+  color: rgb(255, 96, 96);
+}
+.rental-content_host_rating .empty {
+  color: #ccc;
+}
+.rental-content_host_rating span {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.rental-content_dropdowns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  .rental-content_dropdowns {
+    grid-template-columns: 1fr;
+    margin: 0px;
+    gap: 0px;
+  }
+}
+.rental-content .dropdown {
+  margin-top: 0px;
+}
+.rental-content .dropdown-header h3 {
+  margin: 10px;
+}/*# sourceMappingURL=Logement.css.map */

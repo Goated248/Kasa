@@ -1,7 +1,7 @@
 import React from "react";
-import DropdownMenu from "../DropdownMenu/DropdownMenu";
-import './About.css'
-const About = ()=> {
+import DropdownMenu from "../../component/DropdownMenu/DropdownMenu";
+import './Info.css'
+const Info = ()=> {
     const aboutList = [
         {
         title: 'Fiabilité',
@@ -38,4 +38,4 @@ const About = ()=> {
         
     )
 }
-export default About
+export default Info
