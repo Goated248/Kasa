@@ -21,6 +21,26 @@
         color:black;
         background-color: rgba(246, 246, 246, 1);
         padding: 10px 0 10px 10px;
-       
+        transform: scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out, height 0.3s ease-out ;
+    }
+
+    &-content.expanded {
+        transform: scaleY(1);
+        opacity: 1;
+        padding: 10px;
+        height: fit-content;
+    }
+
+    &-icon {
+        transition: transform 0.3s ease-in-out;
+        display: inline-block;
+    }
+    &-icon.open{
+        transform: rotate(-180deg);
     }
 }

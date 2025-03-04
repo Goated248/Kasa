@@ -33,6 +33,9 @@ const Carrousel = ({ pictures, cover }) => {
           <button className="carrousel-button carrousel-button-next" onClick={handleNext}>
           <FontAwesomeIcon icon={faChevronRight} />
           </button>
+          <div className="carrousel-counter">
+            {currentIndex + 1} / {pictures.length}
+          </div>
         </>
       )}
       <div className="carrousel-indicators">

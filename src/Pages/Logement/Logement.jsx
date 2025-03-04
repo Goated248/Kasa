@@ -1,21 +1,23 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Logement.css'
-import { useLocation } from "react-router-dom";
-import PageNotFound from "../404/404";
+import { useLocation, useNavigate} from "react-router-dom";
+
 import DropdownMenu from "../../component/DropdownMenu/DropdownMenu";
 import Carrousel from "../../component/Carrousel/Carrousel";
 
 const Logement = () => {
     const location = useLocation();
     const rental = location.state?.rental;
+    const navigate = useNavigate()
+
+    useEffect(()=> {
+      if (!rental) 
+        navigate('/404')
+      
+    },[])    
+    
   
-    if (!rental) {
-      return (
-        <PageNotFound/>
-      )
-    }
-  
-    return (
+    return rental ? (
       <div className="rental">
         <Carrousel pictures={rental.pictures} cover={rental.cover} />
   
@@ -78,6 +80,7 @@ const Logement = () => {
         </div>
       </div>
     )
+    : <></>
   }
 
   export default Logement

@@ -52,6 +52,9 @@
   border-radius: 35px;
   width: 100%;
   max-width: 1240px;
+  padding: 20px 15px;
+  justify-items: center;
+  align-items: center;
 }
 @media (max-width: 480px) {
   .rentals-list {

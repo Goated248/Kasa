@@ -16,11 +16,11 @@ const DropdownMenu = ({title, content}) => {
       <div className="dropdown-header" onClick={toogleDropdown}>
         <h3>{title}</h3>
         <span className={`dropdown-icon ${isOpen ? "open" : ""}`}>
-          {isOpen ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}
+        <FontAwesomeIcon icon={faChevronUp} />
         </span>
       </div>
-      {isOpen && (
-        <div className="dropdown-content">
+      
+        <div className={`dropdown-content ${isOpen ? "expanded" : ""}`}>
           {Array.isArray(content) ? (
             <ul>
               {content.map((item, index) => (
@@ -31,7 +31,7 @@ const DropdownMenu = ({title, content}) => {
             <div>{content}</div>
           )}
         </div>
-      )}
+      
     </div>
     )
 }

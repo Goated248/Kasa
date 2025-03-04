@@ -21,4 +21,23 @@
   color: black;
   background-color: rgb(246, 246, 246);
   padding: 10px 0 10px 10px;
+  transform: scaleY(0);
+  transform-origin: top;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out, height 0.3s ease-out;
+}
+.dropdown-content.expanded {
+  transform: scaleY(1);
+  opacity: 1;
+  padding: 10px;
+  height: fit-content;
+}
+.dropdown-icon {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+}
+.dropdown-icon.open {
+  transform: rotate(-180deg);
 }/*# sourceMappingURL=DropdownMenu.css.map */

@@ -33,4 +33,13 @@
             right: 15px;
         }
     }
+
+    &-counter {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 18px;
+      }
 }
