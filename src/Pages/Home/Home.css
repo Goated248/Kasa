@@ -27,7 +27,6 @@
 @media (max-width: 480px) {
   .rentals-image {
     height: 111px;
-    padding: 0 10px 0 10px;
     text-align: center;
   }
 }
