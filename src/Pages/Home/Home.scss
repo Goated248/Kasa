@@ -3,6 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media(max-width:480px){
+
+        margin:20px;
+    }
 
     &-image{
         background-image: url('../../assets/background-index.jpg');
@@ -20,6 +24,8 @@
         margin-bottom: 40px;
         @media(max-width:480px){
             height: 111px;
+            padding:0 10px 0 10px;
+            text-align: center;
         }
 
         &::before {

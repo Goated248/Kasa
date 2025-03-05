@@ -41,5 +41,8 @@
         transform: translateX(-50%);
         color: white;
         font-size: 18px;
+        @media(max-width:480px){
+            display:none;
+        }
       }
 }

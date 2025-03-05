@@ -37,4 +37,9 @@
   transform: translateX(-50%);
   color: white;
   font-size: 18px;
+}
+@media (max-width: 480px) {
+  .carrousel-counter {
+    display: none;
+  }
 }/*# sourceMappingURL=Carrousel.css.map */

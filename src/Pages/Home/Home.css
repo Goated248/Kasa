@@ -4,6 +4,11 @@
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 480px) {
+  .rentals {
+    margin: 20px;
+  }
+}
 .rentals-image {
   background-image: url("../../assets/background-index.jpg");
   background-size: cover;
@@ -22,6 +27,8 @@
 @media (max-width: 480px) {
   .rentals-image {
     height: 111px;
+    padding: 0 10px 0 10px;
+    text-align: center;
   }
 }
 .rentals-image::before {
