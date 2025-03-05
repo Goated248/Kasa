@@ -67,5 +67,6 @@
   .rentals-list {
     grid-template-columns: 1fr;
     justify-items: center;
+    background-color: white;
   }
 }/*# sourceMappingURL=Home.css.map */
